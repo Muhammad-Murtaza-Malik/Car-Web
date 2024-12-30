@@ -1,0 +1,326 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 2em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* Car Showcase Section Styling */
+.car-showcase {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.car-showcase h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.car-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.car-card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.car-card p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.car-card span {
+    font-size: 1.5em;
+    color: #ffcc00;
+}
+
+/* About Us Section Styling */
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Our Mission Section Styling */
+.mission {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mission p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Our Team Section Styling */
+.team {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive Design for Team Section */
+@media screen and (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+    }
+
+    .about-us h2,
+    .mission h2,
+    .team h2 {
+        font-size: 2em;
+    }
+
+    .about-us p,
+    .mission p {
+        font-size: 1.1em;
+    }
+}
+
+/* Contact Section Styling */
+.contact-us {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contact-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-us form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-us form input,
+.contact-us form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-us form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-us form button {
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us form button:hover {
+    background-color: #e6b800;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-us h2 {
+        font-size: 2em;
+    }
+
+    .contact-us p {
+        font-size: 1.1em;
+    }
+
+    .contact-us form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-us form input,
+    .contact-us form textarea {
+        font-size: 1em;
+    }
+
+    .contact-us form button {
+        font-size: 1.1em;
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5em;
+}
